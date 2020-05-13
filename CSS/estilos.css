@@ -1,17 +1,66 @@
+/* Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: #FFE4E1; 
+    background: #FFF0F5;
     /* background-image: url(); 
     background-size: auto 100vh*/
-    font-family: Times New Roman;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
+  }
+
+  /* Breakpoint
+  Quando a tela tiver a partir de 400px vai carregar esses estilos: */
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+}
+  }
+
+  @media (min-width: 600px) {
+    body {
+      font-size: 16px;
+}
+  }
+
+  @media (min-width: 800px) {
+    body {
+      font-size: 18px;
+}
+  }
+
+  @media (min-width: 1000px) {
+    body {
+      font-size: 20px;
+}
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu {
-    background-color: #FFB6C1;
+    background-color: #696969;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    /* background: #D3D3D3; */
   }
   
   a {
-    color: #4B0082;
+    color: #C0C0C0;
     text-decoration: none;
   }
   
@@ -31,9 +80,18 @@ body {
   .site-subtitle,
   .site-title {
     text-align: center;
-    color: #4B0082;
+    color: #DB7093;
   }
   
   .site-subtitle {
-    font-style: italic;
+    font-style: bold;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .img-sobre {
+    width: 120px;
+    object-fit: fill;
   }
